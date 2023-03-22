@@ -5,8 +5,11 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Montserrat', 'Arial', sans-serif;
-}
 
+}
+a{
+	cursor: pointer;
+}
 header{
 	width: 100%;
 	display: flex;
@@ -130,7 +133,7 @@ margin-bottom: 60px;
 
 footer{
 	width: 100%;
-	height: 260px;
+	height: 460px;
 	background-color: #333;
 	display: flex;
 	padding: 20px;
@@ -145,6 +148,22 @@ footer img{
 	width: 10%;
 }
 
+.dadosfooter{
+	width: 100%;
+
+	display: flex;
+	flex-direction: row;
+	gap: 30px;
+	margin: 50px 0px;
+	font-size: 1rem;
+	line-height: 1.8rem;
+}
+
+.dadosfooter a{
+	color: whitesmoke;
+	text-decoration: none;
+}
+
 @media screen and (max-width:780px){
 	.text, .form{
 		width: 100%;
@@ -156,10 +175,14 @@ footer img{
 	}
 
 	footer{
-		height: 200px;
+		height: 500px;
+		margin: 0;
+		padding: 0;
+		align-items: center;
 	}
 	footer img{
 		width: 25%;
+		padding-top: 30px;
 	}
 	.text img{
 		width: 100%;
@@ -175,6 +198,31 @@ footer img{
 	}
 	.barracontato{
 		margin-bottom: 30px;
+	}
+	.dadosfooter{
+		flex-direction: column;
+	}
+	.dadosfooter div{
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: flex-start;
+		text-align: left;
+		width: 100%;
+		margin: 0;
+		box-sizing: border-box;
+	}
+
+	.dadosfooter font{
+		margin: 0;
+			font-size: 0.6rem;
+			max-width: 100%;
+			margin-left: 5%;
+	}
+	footer p{
+		max-width: 70%;
+		margin: 0;
+		text-align: center;
 	}
 }
 
